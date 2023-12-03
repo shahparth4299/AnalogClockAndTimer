@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TimerAlarmActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#00FFFF"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="?attr/imageButtonStyle" />
+
+    <SurfaceView
+        android:id="@+id/surfaceViewTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1" />
+
+    <EditText
+        android:id="@+id/timerValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Enter number in seconds"
+        android:inputType="numberDecimal" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#00FFFF"
+        android:text="Start Timer"
+        android:textColor="#000000"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/updateTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#00FFFF"
+        android:text="Restart Timer"
+        android:textColor="#000000" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/stopTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#00FFFF"
+        android:text="Stop Timer"
+        android:textColor="#000000" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFF"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/bottom_menu"/>
+</LinearLayout>

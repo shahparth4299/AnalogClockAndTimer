@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/baseline_access_time_24"
+        android:id="@+id/clock"
+        android:iconTint="@color/black"
+        android:title="Clock"/>
+    <item
+        android:id="@+id/timer"
+        android:iconTint="@color/black"
+        android:icon="@drawable/baseline_alarm_24"
+        android:title="Timer" />
+</menu>
